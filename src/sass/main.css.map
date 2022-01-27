@@ -4,7 +4,15 @@
     "sources": [
         "main.scss",
         "utils/_variables.scss",
-        "utils/_mixins.scss"
+        "utils/_mixins.scss",
+        "layout/_hero-header.scss",
+        "layout/_footer.scss",
+        "components/_products.scss",
+        "components/_about.scss",
+        "components/_advantages.scss",
+        "components/_contacts.scss",
+        "components/_customer_reviews.scss",
+        "components/_gallery.scss"
     ],
     "names": [],
     "file": "main.css"

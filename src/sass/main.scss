@@ -2,3 +2,17 @@
 
 @import './utils/variables';
 @import './utils/mixins';
+
+// header and footer
+
+@import './layout/hero-header';
+@import './layout/footer';
+
+// basestyles
+
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/contacts';
+@import './components/customer_reviews';
+@import './components/gallery';
