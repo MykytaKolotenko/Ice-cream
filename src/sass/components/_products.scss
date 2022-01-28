@@ -29,9 +29,17 @@
   border-radius: 24px;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    padding: 152px 11px 40px 11px;
+  }
 }
 .products-card:not(:last-child) {
   margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 .products-card.ice-cream {
   background-color: var(--hh-main-color);
@@ -60,23 +68,46 @@
   content: '';
 
   position: absolute;
-  top: -274px;
+  top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -113%);
 
   width: 249px;
   height: 252px;
 
   background-size: cover;
+  @media screen and(min-width:768px) {
+    width: 220px;
+    height: 226px;
+  }
 }
 .products-card__title.ice-cream::before {
-  background-image: url(../images/pink_ice.jpg);
+  background-image: url(../images/pink_ice.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/pink_ice@2x.png);
+  }
 }
 .products-card__title.ice-coffee::before {
-  background-image: url(../images/coffee.jpg);
+  background-image: url(../images/coffee.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/coffee@2x.png);
+  }
 }
 .products-card__title.milkshakes::before {
-  background-image: url(../images/chocolate.jpg);
+  background-image: url(../images/chocolate.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/chocolate@2x.png);
+  }
+}
+.products-card__title::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 26px;
+  height: 6px;
 }
 
 .products-card__description {
@@ -98,4 +129,12 @@
   border-radius: 50%;
   border: 0;
   background-color: var(--main-color);
+  text-align: center;
+  color: var(--svg-main-color);
+}
+
+.products__card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
