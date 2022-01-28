@@ -54,8 +54,8 @@ img {
 .container {
   max-width: unset;
   min-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 480px) {
@@ -68,12 +68,16 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1065px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
