@@ -130,6 +130,11 @@ img {
   text-transform: uppercase;
   color: var(--text-opacity-c);
 }
+@media screen and (min-width: 768px) {
+  .products__subtitle {
+    font-size: 26px;
+  }
+}
 
 .products__title {
   margin: 0 0 144px 0;
@@ -141,6 +146,12 @@ img {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-header-c);
+}
+@media screen and (min-width: 768px) {
+  .products__title {
+    font-size: 48px;
+    margin: 0 0 152px 0;
+  }
 }
 
 .products-card {
@@ -253,6 +264,11 @@ img {
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
 }
+@media screen and (min-width: 768px) {
+  .products-card__description {
+    line-height: 1.76;
+  }
+}
 
 .products-card__btn {
   width: 40px;
@@ -268,5 +284,6 @@ img {
 @media screen and (min-width: 768px) {
   .products__card-set {
     display: flex;
+    margin-left: -20px;
   }
 }/*# sourceMappingURL=main.css.map */

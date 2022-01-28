@@ -11,6 +11,9 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--text-opacity-c);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
 }
 .products__title {
   margin: 0 0 144px 0;
@@ -23,6 +26,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-header-c);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin: 0 0 152px 0;
+  }
 }
 .products-card {
   padding: 161px 40px 41px 40px;
@@ -120,6 +127,9 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+  }
 }
 .products-card__btn {
   width: 40px;
@@ -136,5 +146,7 @@
 .products__card-set {
   @media screen and (min-width: 768px) {
     display: flex;
+
+    margin-left: -20px;
   }
 }
