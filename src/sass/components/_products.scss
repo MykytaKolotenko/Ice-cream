@@ -1,6 +1,23 @@
+.products__card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -23px;
+  }
+}
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+  }
 }
 .products__subtitle {
   margin: 0 0 15px 0;
@@ -13,6 +30,10 @@
   color: var(--text-opacity-c);
   @media screen and (min-width: 768px) {
     font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.14;
   }
 }
 .products__title {
@@ -30,6 +51,11 @@
     font-size: 48px;
     margin: 0 0 152px 0;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    margin: 0 0 259px 0;
+    line-height: 1.14;
+  }
 }
 .products-card {
   padding: 161px 40px 41px 40px;
@@ -40,6 +66,10 @@
   @media screen and (min-width: 768px) {
     margin-left: 20px;
     padding: 152px 11px 40px 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 23px;
+    padding: 163px 44px 50px 44px;
   }
 }
 .products-card:not(:last-child) {
@@ -70,6 +100,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-alternate-c);
+  @media screen and(min-width:1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin: 0 0 70px 0;
+  }
 }
 .products-card__title::before {
   content: '';
@@ -86,6 +121,10 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 337px;
+    height: 335px;
   }
 }
 .products-card__title.ice-cream::before {
@@ -109,12 +148,17 @@
 .products-card__title::after {
   content: '';
   position: absolute;
-  top: 35px;
+  top: 53px;
   left: 50%;
   transform: translateX(-50%);
 
   width: 26px;
   height: 6px;
+  background-size: cover;
+  background-image: url(../images/points.png);
+  @media screen and (min-width: 1280px) {
+    top: 66px;
+  }
 }
 
 .products-card__description {
@@ -129,6 +173,11 @@
   color: var(--text-alternate-c);
   @media screen and (min-width: 768px) {
     line-height: 1.76;
+    margin: 0 0 40px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin: 0 0 62px 0;
   }
 }
 .products-card__btn {
@@ -141,12 +190,4 @@
   background-color: var(--main-color);
   text-align: center;
   color: var(--svg-main-color);
-}
-
-.products__card-set {
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-    margin-left: -20px;
-  }
 }
