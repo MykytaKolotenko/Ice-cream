@@ -3,6 +3,10 @@
 @import './utils/variables';
 @import './utils/mixins';
 
+//  base
+
+@import './base/global';
+
 // header and footer
 
 @import './layout/hero-header';
