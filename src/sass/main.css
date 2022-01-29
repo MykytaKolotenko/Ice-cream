@@ -116,18 +116,6 @@ img {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) {
-  .products__card-set {
-    display: flex;
-    margin-left: -20px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products__card-set {
-    margin-left: -23px;
-  }
-}
-
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -190,6 +178,18 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .products__card-set {
+    display: flex;
+    margin-left: -20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__card-set {
+    margin-left: -23px;
+  }
+}
+
 .products-card {
   padding: 161px 40px 41px 40px;
   border-radius: 24px;
@@ -247,6 +247,44 @@ img {
     line-height: 1.13;
     margin: 0 0 70px 0;
   }
+}
+
+.products-card__description {
+  margin: 0 0 30px 0;
+  font-family: var(--main-ff);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-alternate-c);
+}
+@media screen and (min-width: 768px) {
+  .products-card__description {
+    line-height: 1.76;
+    margin: 0 0 40px 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products-card__description {
+    font-size: 16px;
+    margin: 0 0 62px 0;
+  }
+}
+
+.products-card__btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--svg-main-color);
+  cursor: pointer;
+}
+.products-card__btn:hover, .products-card__btnfocus {
+  background-color: var(--svg-hover-color);
 }
 
 .products-card__title::before {
@@ -314,38 +352,4 @@ img {
   .products-card__title::after {
     top: 66px;
   }
-}
-
-.products-card__description {
-  margin: 0 0 30px 0;
-  font-family: var(--main-ff);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--text-alternate-c);
-}
-@media screen and (min-width: 768px) {
-  .products-card__description {
-    line-height: 1.76;
-    margin: 0 0 40px 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .products-card__description {
-    font-size: 16px;
-    margin: 0 0 62px 0;
-  }
-}
-
-.products-card__btn {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border-radius: 50%;
-  border: 0;
-  background-color: var(--main-color);
-  text-align: center;
-  color: var(--svg-main-color);
 }/*# sourceMappingURL=main.css.map */

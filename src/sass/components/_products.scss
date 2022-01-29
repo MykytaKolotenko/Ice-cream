@@ -1,13 +1,4 @@
-.products__card-set {
-  @media screen and (min-width: 768px) {
-    display: flex;
-
-    margin-left: -20px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: -23px;
-  }
-}
+// -------section paddings--------
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -19,6 +10,7 @@
     padding-top: 127px;
   }
 }
+// ------section title and subtitle stlyles-------
 .products__subtitle {
   margin: 0 0 15px 0;
 
@@ -57,6 +49,18 @@
     line-height: 1.14;
   }
 }
+// ------- card-set styles----------
+.products__card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    margin-left: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -23px;
+  }
+}
+// --------cards-styles----------
 .products-card {
   padding: 161px 40px 41px 40px;
   border-radius: 24px;
@@ -106,6 +110,43 @@
     margin: 0 0 70px 0;
   }
 }
+.products-card__description {
+  margin: 0 0 30px 0;
+
+  font-family: var(--main-ff);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-alternate-c);
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin: 0 0 40px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin: 0 0 62px 0;
+  }
+}
+.products-card__btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--svg-main-color);
+  cursor: pointer;
+
+  &:hover,
+  &focus {
+    background-color: var(--svg-hover-color);
+  }
+}
+// ------ card img - pseudo element -------
 .products-card__title::before {
   content: '';
 
@@ -145,6 +186,7 @@
     background-image: url(../images/chocolate@2x.png);
   }
 }
+// ------- points in the card - pseudo element--------
 .products-card__title::after {
   content: '';
   position: absolute;
@@ -159,35 +201,4 @@
   @media screen and (min-width: 1280px) {
     top: 66px;
   }
-}
-
-.products-card__description {
-  margin: 0 0 30px 0;
-
-  font-family: var(--main-ff);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--text-alternate-c);
-  @media screen and (min-width: 768px) {
-    line-height: 1.76;
-    margin: 0 0 40px 0;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    margin: 0 0 62px 0;
-  }
-}
-.products-card__btn {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-
-  border-radius: 50%;
-  border: 0;
-  background-color: var(--main-color);
-  text-align: center;
-  color: var(--svg-main-color);
 }
