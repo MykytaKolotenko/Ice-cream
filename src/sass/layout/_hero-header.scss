@@ -1,0 +1,136 @@
+@import './header/button-nav';
+
+@import './header/buy-now';
+
+@import './header/sait-nav';
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.header {
+  background-color: var(--hh-main-color);
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.header__container {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 720px;
+    padding-top: 37px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 37px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header__wraper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1279px) {
+    padding-top: 60px;
+    padding-left: 21px;
+    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;    
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--b-bg-menu-c);
+      transform: translateY(0);
+      width: 100%;
+      height: 100vh;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: initial;      
+    }
+  }
+}
+
+.header__nav {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__link {
+  @media screen and (min-width: 1280px) {
+    margin-right: 110px;
+  }
+}
+
+.header__button-close {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 14px;
+  height: 14px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header__icon-close {
+  width: 100%;
+  height: 100%;
+}
+
+%link {
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
