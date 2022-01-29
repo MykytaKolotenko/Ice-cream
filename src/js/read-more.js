@@ -14,10 +14,12 @@ for (btn of btns) {
     if(dots.style.display === 'none') {
       dots.style.display = 'inline';
       more.style.display = 'none';
+      this.textContent = '🡺';
     } else {
       //Иначе показать текст и скрыть точки
       dots.style.display = 'none';
       more.style.display = 'inline';
+      this.textContent = '🡸';
     }
   });
 }

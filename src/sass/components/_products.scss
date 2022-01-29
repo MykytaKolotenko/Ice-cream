@@ -145,6 +145,7 @@
   text-align: center;
   color: var(--svg-main-color);
   cursor: pointer;
+  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
@@ -212,4 +213,7 @@
 //----- hide text in the card ----
 .more {
   display: none;
+}
+.open {
+  transform: rotateZ(-180deg);
 }
