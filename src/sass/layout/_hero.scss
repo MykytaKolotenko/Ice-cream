@@ -1,0 +1,472 @@
+.hero {
+  background-color: var(--hh-main-color);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 137px;
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 15px;
+    padding-bottom: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 84px;
+    padding-bottom: 56px;
+  }
+}
+
+.container-position {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+      width: 171px;
+      height: 410px;
+      top: -102px;
+      right: 17px;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/ice-cream.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 143px;
+      height: 336px;
+      top: -36px;
+      right: 223px;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/ice-cream.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 236px;
+      height: 557px;
+      top: -61px;
+      right: 336px;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/ice-cream.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/ice-cream@2x.png);
+      }
+    }
+  }
+}
+
+.hero__wrapper-title {
+  z-index: 2;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    width: 218px;
+    height: 106px;
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+    width: 277px;
+    height: 137px;
+  }
+}
+
+.hero__title {
+  font-family: var(--additional-ff);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: var(--text-alternate-c);
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    line-height: 1.16;
+  }
+}
+
+.hero__title-changed {
+  font-size: 48px;
+  line-height: 0.96;
+
+  color: var(--text-header-c);
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 0.91;
+  }
+}
+
+.hero__wrapper-button {
+  z-index: 2;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
+  }
+}
+
+.hero__products {
+  width: 62px;
+  height: 24px;
+  background: var(--b-burger-c);
+  border: none;
+  border-radius: 20px;
+  margin-right: 8px;
+  padding: 0;
+
+  font-family: var(--main-ff);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+
+  color: var(--text-alternate-c);
+
+  &:hover,
+  &:focus {
+    background: var(--hh-hover-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+    width: 102px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero__how-made {
+  width: 82px;
+  height: 24px;
+  background: var(--main-color);
+  border-radius: 20px;
+  border: none;
+  padding: 0;
+
+  font-family: var(--main-ff);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+
+  color: var(--text-header-c);
+
+  &:hover,
+  &:focus {
+    background: var(--svg-hover-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero__text-container {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 234px;
+    padding-left: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 380px;
+    padding-left: 180px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      width: 168px;
+      height: 133px;
+      bottom: -34px;
+      right: 0;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/so-tasty.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/so-tasty@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 293px;
+      height: 232px;
+      bottom: -56px;
+      right: 0;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/so-tasty.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/so-tasty@2x.png);
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+
+    @media screen and (min-width: 768px) {
+      width: 124px;
+      height: 126px;
+      bottom: -6px;
+      left: 0;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/bio-eco.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/bio-eco@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 188px;
+      height: 191px;
+      bottom: -11px;
+      left: -46px;
+      z-index: 2;
+      background-size: cover;
+      background-image: url(../images/bio-eco.png);
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/bio-eco@2x.png);
+      }
+    }
+  }
+}
+
+.hero__text {
+  margin: 0;
+
+  font-family: var(--main-ff);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+
+  color: var(--text-alternate-c);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__button-modal {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--main-color);
+  text-align: center;
+  color: var(--svg-main-color);
+  cursor: pointer;
+  font-size: 7px;
+
+  &:hover,
+  &focus {
+    background-color: var(--svg-hover-color);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+    font-size: 10px;
+  }
+}
+
+.hero__price-cafes {
+  position: absolute;
+  display: none;
+  top: -3px;
+  right: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 43px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 72px;
+    height: 77px;
+
+    top: -10px;
+    right: 15px;
+  }
+}
+
+.hero__icon-cafes {
+  @media screen and (min-width: 768px) {
+    width: 43px;
+    height: 44px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 72px;
+    height: 77px;
+  }
+}
+
+.hero__price-food {
+  position: absolute;
+  display: none;
+  top: 69px;
+  right: 10px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 51px;
+    height: 43px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 92px;
+    height: 76px;
+
+    top: 166px;
+    right: 15px;
+  }
+}
+
+.hero__icon-food {
+  @media screen and (min-width: 768px) {
+    width: 51px;
+    height: 43px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 92px;
+    height: 76px;
+  }
+}
+
+.hero__ellipse-mob {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  z-index: 1;
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+    width: 274px;
+    height: 344px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+
+    top: -56px;
+    right: 113px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+
+    top: -171px;
+    right: 185px;
+  }
+}
+
+.hero__icon-ellipse {
+  @media screen and (max-width: 767px) {
+    height: 344px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
+}
+
+// .hero__ellipse-mob::before {
+//   background-image: url(../images/ice-cream.png);
+//   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     background-image: url(../images/ice-cream@2x.png);
+//   }
+// }
+
+// .hero__ellipse-mob::before {
+//   background-image: url(../images/coffee.png);
+//   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     background-image: url(../images/coffee@2x.png);
+//   }
+// }
+
+// .hero__ellipse-mob::before {
+//   background-image: url(../images/chocolate.png);
+//   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     background-image: url(../images/chocolate@2x.png);
+//   }
+// }
