@@ -47,8 +47,6 @@
 //button
 
 @mixin button($pl, $pr, $color, $bg-c) {
-  padding-top: 11px;
-  padding-bottom: 11px;
   padding-left: $pl;
   padding-right: $pr;
 
