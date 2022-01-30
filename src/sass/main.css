@@ -519,6 +519,11 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
+
+#more {
+  display: none;
+}
+
 .contacts {
   background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
   padding-bottom: 113px;
