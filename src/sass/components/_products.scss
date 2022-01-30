@@ -55,6 +55,7 @@
     display: flex;
 
     margin-left: -20px;
+    align-items: flex-start;
   }
   @media screen and (min-width: 1280px) {
     margin-left: -23px;
@@ -70,10 +71,12 @@
   @media screen and (min-width: 768px) {
     margin-left: 20px;
     padding: 152px 11px 40px 11px;
+    flex-basis: calc((100% - 60px) / 3);
   }
   @media screen and (min-width: 1280px) {
     margin-left: 23px;
     padding: 163px 44px 50px 44px;
+    flex-basis: calc((100% - 69px) / 3);
   }
 }
 .products-card:not(:last-child) {
@@ -112,6 +115,7 @@
 }
 .products-card__description {
   margin: 0 0 30px 0;
+  max-height: 150px;
 
   font-family: var(--main-ff);
   font-weight: 700;
@@ -120,13 +124,17 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
+  overflow: scroll;
+
   @media screen and (min-width: 768px) {
     line-height: 1.76;
     margin: 0 0 40px 0;
+    max-height: 200px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     margin: 0 0 62px 0;
+    max-height: 220px;
   }
 }
 .products-card__btn {
@@ -137,15 +145,19 @@
   border-radius: 50%;
   border: 0;
   background-color: var(--main-color);
+  font-size: 14px;
+  font-weight: 700;
   text-align: center;
   color: var(--svg-main-color);
   cursor: pointer;
+  transition: background-color 250ms linear;
 
   &:hover,
-  &focus {
+  &:focus {
     background-color: var(--svg-hover-color);
   }
 }
+
 // ------ card img - pseudo element -------
 .products-card__title::before {
   content: '';
@@ -201,4 +213,12 @@
   @media screen and (min-width: 1280px) {
     top: 66px;
   }
+}
+
+//----- hide text in the card ----
+.more {
+  display: none;
+}
+.open {
+  transform: rotateZ(-180deg);
 }
