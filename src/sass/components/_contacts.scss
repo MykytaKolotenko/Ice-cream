@@ -90,32 +90,33 @@
   }
 
   &__buttons {
-    display: flex;
-    flex-wrap: wrap;
-
     @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
       margin-top: 81px;
       justify-content: center;
     }
   }
 }
 
-// .container {
-//   padding-left: 50px;
-//   padding-right: 50px;
-//   font-size: 12px;
-//   line-height: 1.86;
+.container-contacts {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 12px;
+  line-height: 1.86;
 
-//   @media screen and (min-width: 768px) {
-//     font-size: 14px;
-//   }
+  @media screen and (min-width: 768px) {
+    padding-left: 9px;
+    padding-right: 9px;
+    font-size: 14px;
+  }
 
-//   @media screen and (min-width: 1280px) {
-//     padding-left: 115px;
-//     padding-right: 115px;
-//     font-size: 16px;
-//   }
-// }
+  @media screen and (min-width: 1280px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+  }
+}
 
 .contacts-wrapper {
   margin-top: 25px;
