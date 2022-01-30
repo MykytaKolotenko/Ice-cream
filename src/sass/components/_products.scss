@@ -115,6 +115,7 @@
 }
 .products-card__description {
   margin: 0 0 30px 0;
+  max-height: 150px;
 
   font-family: var(--main-ff);
   font-weight: 700;
@@ -123,13 +124,17 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
+  overflow: scroll;
+
   @media screen and (min-width: 768px) {
     line-height: 1.76;
     margin: 0 0 40px 0;
+    max-height: 200px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     margin: 0 0 62px 0;
+    max-height: 220px;
   }
 }
 .products-card__btn {
