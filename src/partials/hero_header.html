@@ -1,1 +1,65 @@
-<p>hero header</p>
+
+<header class="header">
+    <div class="header__container">
+        <!-- =====Logo===== -->
+
+        <a class="header__link" href="#" lang="en">
+            <picture>
+                <source srcset="images/logo.png 1x,
+                images/logo@2x.png 2x
+                ">
+                <img src="images/logo.png" width="199px" alt="Логотип вкусное мороженое">
+            </picture>
+        </a>
+
+        <nav class="header__nav">
+            
+                <div class="header__wraper" id="header__wraper" data-menu>
+                    <div class="header__wrape">                   
+                
+                        <button class="buy-now buy-now--menu" type="button">
+                            Buy now
+                            <svg class="buy-now__icon">
+                                <use href="images/svg/vector.svg#icon-check-mark"></use>
+                            </svg>
+                        </button>
+                
+                        <ul class="sait-nav">
+                            <li class="sait-nav__item"><a class="sait-nav__link sait-nav__link--current">Home</a></li>
+                            <li class="sait-nav__item"><a class="sait-nav__link">About us</a></li>
+                            <li class="sait-nav__item"><a class="sait-nav__link">How it&#39;s made?</a></li>
+                            <li class="sait-nav__item"><a class="sait-nav__link">Our products</a></li>
+                            <li class="sait-nav__item"><a class="sait-nav__link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+            
+
+            <button class="buttonn-nav" type="button" aria-expanded="false" aria-controls="header-wraper"
+                data-menu-button>
+                <div class="buttonn-nav__wraper">
+                    <div class="buttonn-nav__underline"></div>
+                    <div class="buttonn-nav__underline"></div>
+                    <div class="buttonn-nav__underline"></div>
+                </div>
+
+               
+                    <svg class="buttonn-nav__icon-close" aria-label="Переключатель мобильного меню">
+                        <use href="images/svg/icon-close.svg#icon-close"></use>
+                    </svg>
+               
+            </button>
+
+            <button class="buy-now" type="button" data-modal-open>
+                Buy now
+                <svg class="buy-now__icon">
+                    <use href="images/svg/vector.svg#icon-check-mark"></use>
+                </svg>
+            </button>
+        </nav>
+
+    </div>
+
+</header>
+

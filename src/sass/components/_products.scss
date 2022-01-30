@@ -1,0 +1,219 @@
+// -------section paddings--------
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+  }
+}
+// ------section title and subtitle stlyles-------
+.products__subtitle {
+  margin: 0 0 15px 0;
+
+  font-family: var(--additional-ff);
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--text-opacity-c);
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.14;
+  }
+}
+.products__title {
+  margin: 0 0 144px 0;
+
+  font-family: var(--additional-ff);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-header-c);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin: 0 0 152px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    margin: 0 0 259px 0;
+    line-height: 1.14;
+  }
+}
+// ------- card-set styles----------
+.products__card-set {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    margin-left: -20px;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -23px;
+  }
+}
+// --------cards-styles----------
+.products-card {
+  padding: 161px 40px 41px 40px;
+  border-radius: 24px;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    padding: 152px 11px 40px 11px;
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 23px;
+    padding: 163px 44px 50px 44px;
+    flex-basis: calc((100% - 69px) / 3);
+  }
+}
+.products-card:not(:last-child) {
+  margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+.products-card.ice-cream {
+  background-color: var(--hh-main-color);
+}
+.products-card.ice-coffee {
+  background-color: var(--add-card-cofee);
+}
+.products-card.milkshakes {
+  background-color: var(--add-card-milk);
+}
+.products-card__title {
+  position: relative;
+
+  margin: 0 0 66px 0;
+
+  font-family: var(--additional-ff);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-alternate-c);
+  @media screen and(min-width:1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin: 0 0 70px 0;
+  }
+}
+.products-card__description {
+  margin: 0 0 30px 0;
+
+  font-family: var(--main-ff);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-alternate-c);
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+    margin: 0 0 40px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin: 0 0 62px 0;
+  }
+}
+.products-card__btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: 0;
+  background-color: var(--main-color);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--svg-main-color);
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--svg-hover-color);
+  }
+}
+
+// ------ card img - pseudo element -------
+.products-card__title::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -113%);
+
+  width: 249px;
+  height: 252px;
+
+  background-size: cover;
+  @media screen and(min-width:768px) {
+    width: 220px;
+    height: 226px;
+  }
+  @media screen and(min-width:1280px) {
+    width: 337px;
+    height: 335px;
+  }
+}
+.products-card__title.ice-cream::before {
+  background-image: url(../images/pink_ice.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/pink_ice@2x.png);
+  }
+}
+.products-card__title.ice-coffee::before {
+  background-image: url(../images/coffee.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/coffee@2x.png);
+  }
+}
+.products-card__title.milkshakes::before {
+  background-image: url(../images/chocolate.png);
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/chocolate@2x.png);
+  }
+}
+// ------- points in the card - pseudo element--------
+.products-card__title::after {
+  content: '';
+  position: absolute;
+  top: 53px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 26px;
+  height: 6px;
+  background-size: cover;
+  background-image: url(../images/points.png);
+  @media screen and (min-width: 1280px) {
+    top: 66px;
+  }
+}
+
+//----- hide text in the card ----
+.more {
+  display: none;
+}
+.open {
+  transform: rotateZ(-180deg);
+}
