@@ -621,19 +621,19 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
-.container {
+.contacts-container {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 12px;
   line-height: 1.86;
 }
 @media screen and (min-width: 768px) {
-  .container {
+  .contacts-container {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .contacts-container {
     padding-left: 115px;
     padding-right: 115px;
     font-size: 16px;
