@@ -2,7 +2,7 @@ $(function () {
     $('.slider').slick({
       infinite: true,
       dots: true,
-      arrows: true,
+      arrows: false,
       speed: 700,
       adaptiveHeight: true,
     });
