@@ -70,7 +70,7 @@ img {
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 12800px;
+    width: 1280px;
   }
 }
 
@@ -519,53 +519,67 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
-+ .contacts {
+.contacts {
   background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
   padding-bottom: 113px;
 }
-+ .contacts__list {
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    padding-bottom: 113px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    background-repeat: no-repeat;
+    background-position: 0 102px, 0;
+    background-size: contain;
+  }
+}
+.contacts__list {
   margin-bottom: 54px;
 }
 @media screen and (min-width: 768px) {
-  + .contacts__list {
+  .contacts__list {
     display: flex;
   }
 }
 @media screen and (min-width: 768px) {
-  + .contacts__list {
+  .contacts__list {
     margin: -10px;
   }
 }
 @media screen and (min-width: 1280px) {
-  + .contacts__list {
+  .contacts__list {
     margin: -15px;
   }
 }
-+ .contacts__item {
+.contacts__item {
   padding: 43px 20px;
   background: var(--main-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
 @media screen and (max-width: 767px) {
-  + .contacts__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  + .contacts__item {
+  .contacts__item {
     width: calc((100% - 6 * 10px) / 3);
     margin: 10px;
   }
 }
 @media screen and (min-width: 1280px) {
-  + .contacts__item {
+  .contacts__item {
     padding: 43px 43px;
     width: calc((100% - 6 * 15px) / 3);
     margin: 15px;
   }
 }
-+ .contacts__label {
+.contacts__label {
   margin: 0;
   width: 80px;
   border-radius: 4px;
@@ -575,33 +589,33 @@ footer .footer-contacts .footer-phone a {
   color: var(--text-alternate-c);
   text-align: center;
 }
-+ .contacts__label--color {
+.contacts__label--color {
   background-color: var(--add-card-milk);
   width: 130px;
 }
 @media screen and (min-width: 768px) {
-  + .contacts__label {
+  .contacts__label {
     font-size: 16px;
   }
 }
-+ .contacts__title {
+.contacts__title {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: inherit;
   font-weight: 500;
   letter-spacing: 0.04em;
 }
-+ .contacts__description {
+.contacts__description {
   margin: 0;
   line-height: 1.5;
   color: var(--text-description-c);
 }
-+ .contacts__buttons {
+.contacts__buttons {
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  + .contacts__buttons {
+  .contacts__buttons {
     margin-top: 81px;
     justify-content: center;
   }
