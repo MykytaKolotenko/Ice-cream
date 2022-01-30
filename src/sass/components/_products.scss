@@ -139,7 +139,7 @@
   }
 }
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
@@ -157,7 +157,7 @@
   text-align: center;
   color: var(--svg-main-color);
   cursor: pointer;
-  transition: background-color 250ms linear;
+  transition: background-color var(--transition-time-cubic);
 
   &:hover,
   &:focus {
