@@ -10,7 +10,7 @@
 
   --hh-main-color: #ffb8ca;
   --hh-alternate-color: #ffa5ba;
-  --hh-hover-color: #C7133E;
+  --hh-hover-color: #c7133e;
 
   //   fill svg colors
 
@@ -43,4 +43,6 @@
 
   --main-ff: 'DM Sans', sans-serif;
   --additional-ff: 'Titan One', cursive;
+
+  --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
