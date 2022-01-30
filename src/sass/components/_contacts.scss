@@ -1,0 +1,202 @@
+.contacts {
+  background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
+  padding-bottom: 113px;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    padding-bottom: 113px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    background-repeat: no-repeat;
+    background-position: 0 102px, 0;
+    background-size: contain;
+  }
+
+  &__list {
+    margin-bottom: 54px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: -10px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    padding: 43px 20px;
+    background: var(--main-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 10px) / 3);
+      margin: 10px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 43px 43px;
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    width: 80px;
+    border-radius: 4px;
+    background-color: var(--add-card-cofee);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-alternate-c);
+    text-align: center;
+
+    &--color {
+      background-color: var(--add-card-milk);
+      width: 130px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: inherit;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  &__description {
+    margin: 0;
+
+    line-height: 1.5;
+    color: var(--text-description-c);
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 81px;
+      justify-content: center;
+    }
+  }
+}
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 12px;
+  line-height: 1.86;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+    font-size: 16px;
+  }
+}
+
+.contacts-wrapper {
+  margin-top: 25px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 25px;
+  }
+}
+
+.schedule__item + .schedule__item {
+  margin-top: 10px;
+}
+
+.schedule__item--day {
+  margin: 0;
+  font-weight: 500;
+}
+
+.schedule__item--time {
+  margin: 0;
+  color: var(--text-opacity-c);
+}
+
+.contacts-link {
+  line-height: 1.5;
+  color: var(--text-description-c);
+}
+
+.location-btn,
+.franchise-btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: bold;
+
+  min-width: 161px;
+  height: 44px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.location-btn {
+  @include button(17px, 17px, #ffffff, #d41342);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.franchise-btn {
+  @include button(32px, 32px, #d41443, #ffffff);
+
+  @media screen and (min-width: 768px) {
+    margin: 0px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin-left: 8px;
+}

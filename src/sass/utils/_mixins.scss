@@ -1,0 +1,78 @@
+@mixin container($w, $wm, $pl, $pr) {
+  max-width: $w;
+  min-width: $wm;
+  padding-left: $pl;
+  padding-right: $pr;
+}
+
+// Centered by margin
+
+@mixin centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Section padding
+
+@mixin section-padding($h) {
+  padding-top: $h;
+  padding-bottom: $h;
+  width: 100vw;
+}
+
+// Flex
+
+@mixin flex-center($al: center, $jf: center) {
+  display: flex;
+  align-items: $al;
+  justify-content: $jf;
+}
+
+// Backdrop
+
+@mixin backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+  opacity: 1;
+
+  transition: opacity var(--transition-time-cubic);
+}
+
+//button
+
+@mixin button($pl, $pr, $color, $bg-c) {
+  padding-left: $pl;
+  padding-right: $pr;
+
+  color: $color;
+  background-color: $bg-c;
+
+  font-family: var(--main-ff);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 22px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+@mixin hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

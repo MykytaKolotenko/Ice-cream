@@ -1,0 +1,65 @@
+body {
+  color: var(--text-main-c);
+  background-color: var(--main-color);
+
+  font-family: var(--main-ff);
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0px;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
+.centered {
+  @include centered;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+
+  transform: translateY(100%);
+  transition: transform var(--transition-time-cubic);
+}
+
+.backdrop {
+  @include backdrop;
+}
+
+.is-hidden {
+  @include hidden;
+}
