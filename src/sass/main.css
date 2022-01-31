@@ -3,7 +3,7 @@
   --bg-alternate-color: #fff5f6;
   --hh-main-color: #ffb8ca;
   --hh-alternate-color: #ffa5ba;
-  --hh-hover-color: #C7133E;
+  --hh-hover-color: #c7133e;
   --svg-main-color: #d41342;
   --svg-alternate-color: #fff;
   --svg-hover-color: #ecebeb;
@@ -21,6 +21,7 @@
   --add-underline-comments: #e1e1e1;
   --main-ff: 'DM Sans', sans-serif;
   --additional-ff: 'Titan One', cursive;
+  --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -1399,7 +1400,7 @@ footer .footer-contacts .footer-phone a {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
@@ -1418,6 +1419,14 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
 .products-card__btn {
   width: 40px;
   height: 40px;
@@ -1430,8 +1439,8 @@ footer .footer-contacts .footer-phone a {
   text-align: center;
   color: var(--svg-main-color);
   cursor: pointer;
-  -webkit-transition: background-color 250ms linear;
-  transition: background-color 250ms linear;
+  -webkit-transition: background-color var(--transition-time-cubic);
+  transition: background-color var(--transition-time-cubic);
 }
 
 .products-card__btn:hover, .products-card__btn:focus {
@@ -1515,11 +1524,6 @@ footer .footer-contacts .footer-phone a {
 
 .more {
   display: none;
-}
-
-.open {
-  -webkit-transform: rotateZ(-180deg);
-          transform: rotateZ(-180deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -1996,16 +2000,13 @@ footer .footer-contacts .footer-phone a {
   color: var(--text-description-c);
 }
 
-.contacts__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 @media screen and (min-width: 768px) {
   .contacts__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 81px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2013,7 +2014,7 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
-.container {
+.container-contacts {
   padding-left: 50px;
   padding-right: 50px;
   font-size: 12px;
@@ -2021,15 +2022,17 @@ footer .footer-contacts .footer-phone a {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-contacts {
+    padding-left: 9px;
+    padding-right: 9px;
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    padding-left: 115px;
-    padding-right: 115px;
+  .container-contacts {
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 16px;
   }
 }
@@ -2339,21 +2342,28 @@ a {
 
 .gallery {
   padding: 30px 0px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #fff5f6), color-stop(43%, #fff));
-  background-image: linear-gradient(to bottom, #fff5f6 44%, #fff 43%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #fff5f6), color-stop(44%, #fff));
+  background-image: linear-gradient(to bottom, #fff5f6 42%, #fff 44%);
 }
 
 @media screen and (min-width: 480px) {
   .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #fff5f6), color-stop(43%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 45%, #fff 43%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(43%, #fff5f6), color-stop(44%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 43%, #fff 44%);
   }
 }
 
 @media screen and (min-width: 768px) {
   .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #fff5f6), color-stop(43%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 41%, #fff 43%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #fff5f6), color-stop(42%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 42%, #fff 42%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #fff5f6), color-stop(42%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 41%, #fff 42%);
   }
 }
 /*# sourceMappingURL=main.css.map */
