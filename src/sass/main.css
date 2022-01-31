@@ -1904,6 +1904,69 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
+.advantages-glass::before {
+  content: ' ';
+  width: 33px;
+  height: 50px;
+  display: block;
+  background-image: url(/images/glass.png);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-glass::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-glass::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-apple::before {
+  content: ' ';
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url(/images/apple.png);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-apple::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-apple::before {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages-heart::before {
+  content: ' ';
+  width: 44px;
+  height: 50px;
+  display: block;
+  background-image: url(/images/heart.png);
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-heart::before {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages-heart::before {
+    margin-bottom: 40px;
+  }
+}
+
 .advantages-description {
   margin-top: 0px;
   margin-bottom: 0%;
