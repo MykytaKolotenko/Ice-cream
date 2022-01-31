@@ -1,13 +1,18 @@
 .contacts {
+  padding-top: 43px;
+  padding-bottom: calc(113px - 25px);
+
   background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
-  padding-bottom: 113px;
 
   @media screen and (min-width: 768px) {
+    padding-top: 60px;
+
     background-image: linear-gradient(to top, #fff5f6 88%, #fff 12%);
-    padding-bottom: 113px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 88px;
+
     background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 88%, #fff 12%);
     background-repeat: no-repeat;
     background-position: 0 102px, 0;

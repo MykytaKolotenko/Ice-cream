@@ -1,6 +1,15 @@
 .advantages {
-  padding: 15px 0px;
+  padding-top: 20px;
+  padding-bottom: 49px;
   background-color: var(--bg-alternate-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 73px;
+  }
 }
 
 .advantages-img {

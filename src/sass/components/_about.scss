@@ -4,6 +4,9 @@ br {
   }
 }
 .about {
+  padding-top: 125px;
+  padding-bottom: 20px;
+
   background-color: var(--bg-alternate-color);
   max-width: 100%;
   background-image: url(/images/sectionbg.png);
@@ -16,9 +19,15 @@ br {
     background-image: url(/images/sectionbg@2x.png);
   }
   @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+
     background-position: right 0 bottom 65px;
   }
   @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 73px;
+
     background-position: right 0 bottom -65px;
   }
   &__label {
@@ -30,15 +39,14 @@ br {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
     line-height: 1.17;
-    padding-top: 125px;
+
     @media screen and (min-width: 768px) {
       display: block;
-      padding-top: 130px;
+
       font-size: 26px;
       line-height: 1.15;
     }
     @media screen and (min-width: 1280px) {
-      padding-top: 125px;
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;
