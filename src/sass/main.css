@@ -24,6 +24,10 @@
   --transition-time-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--text-main-c);
   background-color: var(--main-color);
@@ -2399,14 +2403,14 @@ a {
 .gallery {
   padding-top: 49px;
   padding-bottom: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #fff5f6), color-stop(44%, #fff));
-  background-image: linear-gradient(to bottom, #fff5f6 42%, #fff 44%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #fff5f6), color-stop(47%, #fff));
+  background-image: linear-gradient(to bottom, #fff5f6 45%, #fff 47%);
 }
 
 @media screen and (min-width: 480px) {
   .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(43%, #fff5f6), color-stop(45%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 43%, #fff 45%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fff5f6), color-stop(48%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 46%, #fff 48%);
   }
 }
 
@@ -2414,15 +2418,15 @@ a {
   .gallery {
     padding-top: 70px;
     padding-bottom: 60px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #fff5f6), color-stop(43%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 41%, #fff 43%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #fff5f6), color-stop(46%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 44%, #fff 46%);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #fff5f6), color-stop(42%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 41%, #fff 42%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(43%, #fff5f6), color-stop(44%, #fff));
+    background-image: linear-gradient(to bottom, #fff5f6 43%, #fff 44%);
   }
 }
 /*# sourceMappingURL=main.css.map */
