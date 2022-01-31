@@ -1932,23 +1932,23 @@ footer .footer-contacts .footer-phone a {
 .contacts {
   padding-top: 43px;
   padding-bottom: calc(113px - 25px);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #fff5f6), color-stop(5%, #fff));
-  background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(92%, #fff5f6), color-stop(5%, #fff));
+  background-image: linear-gradient(to top, #fff5f6 92%, #fff 5%);
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
     padding-top: 60px;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, #fff5f6), color-stop(12%, #fff));
-    background-image: linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(83%, #fff5f6), color-stop(12%, #fff));
+    background-image: linear-gradient(to top, #fff5f6 83%, #fff 12%);
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
     padding-top: 88px;
-    background-image: url(../images/sectionbg2.png), -webkit-gradient(linear, left bottom, left top, color-stop(88%, #fff5f6), color-stop(12%, #fff));
-    background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 88%, #fff 12%);
+    background-image: url(../images/sectionbg2.png), -webkit-gradient(linear, left bottom, left top, color-stop(78%, #fff5f6), color-stop(12%, #fff));
+    background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 78%, #fff 12%);
     background-repeat: no-repeat;
     background-position: 0 102px, 0;
     background-size: contain;
