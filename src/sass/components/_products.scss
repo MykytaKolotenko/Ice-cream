@@ -138,10 +138,10 @@
     max-height: 220px;
   }
 }
-::-webkit-scrollbar {
-  width: 3px;
+.products-card__description::-webkit-scrollbar {
+  width: 2px;
 }
-::-webkit-scrollbar-thumb {
+.products-card__description::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 .products-card__btn {
