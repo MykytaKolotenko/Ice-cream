@@ -1,6 +1,15 @@
 .advantages {
-  padding: 15px 0px;
+  padding-top: 20px;
+  padding-bottom: 49px;
   background-color: var(--bg-alternate-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 73px;
+  }
 }
 
 .advantages-img {
@@ -37,6 +46,7 @@
   text-transform: uppercase;
 
   color: var(--text-header-c);
+
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: calc(55 / 48);
@@ -44,6 +54,69 @@
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: calc(66 / 58);
+  }
+}
+
+.advantages-glass {
+  &::before {
+    content: ' ';
+    width: 33px;
+    height: 50px;
+    display: block;
+    background-image: url(/images/glass.png);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/glass@2x.png);
+    }
+  }
+}
+
+.advantages-apple {
+  &::before {
+    content: ' ';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-image: url(/images/apple.png);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/apple@2x.png);
+    }
+  }
+}
+
+.advantages-heart {
+  &::before {
+    content: ' ';
+    width: 44px;
+    height: 50px;
+    display: block;
+    background-image: url(/images/heart.png);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/heart@2x.png);
+    }
   }
 }
 

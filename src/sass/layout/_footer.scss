@@ -2,6 +2,14 @@ footer {
   padding-bottom: 25px;
   padding-top: 25px;
   background-color: var(--bg-alternate-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 88px;
+    padding-bottom: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 10px;
+  }
   & .container.centered {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -138,6 +146,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 10px;
+  }
 }
 
 .footer-copyright_text {

@@ -138,10 +138,10 @@
     max-height: 220px;
   }
 }
-::-webkit-scrollbar {
-  width: 5px;
+.products-card__description::-webkit-scrollbar {
+  width: 2px;
 }
-::-webkit-scrollbar-thumb {
+.products-card__description::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 .products-card__btn {
@@ -157,7 +157,7 @@
   text-align: center;
   color: var(--svg-main-color);
   cursor: pointer;
-  transition: background-color 250ms linear;
+  transition: background-color var(--transition-time-cubic);
 
   &:hover,
   &:focus {

@@ -50,7 +50,9 @@ p {
   flex-direction: column;
   justify-content: space-between;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  // z-index: 5;
 
   @media screen and (max-width: 1279px) {
     padding-top: 60px;
@@ -63,7 +65,7 @@ p {
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;    
+    pointer-events: none;
 
     &.is-open {
       display: flex;
@@ -76,7 +78,7 @@ p {
       height: 100vh;
       opacity: 1;
       visibility: visible;
-      pointer-events: initial;      
+      pointer-events: initial;
     }
   }
 }
@@ -133,4 +135,27 @@ p {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.header-modal_lines {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: var(--svg-main-color);
+  &:not(:first-child) {
+    margin-top: 6px;
+  }
+}
+
+.header-burger {
+  border: none;
+  background-color: inherit;
+  z-index: 10;
+  &:hover .header-modal_lines {
+    background-color: red;
+  }
+}
+
+.header-modal {
+  background-color: var(--b-bg-menu-c);
 }
