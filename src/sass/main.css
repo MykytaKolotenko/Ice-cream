@@ -1034,6 +1034,19 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    padding-top: 88px;
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   footer .container.centered {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1212,6 +1225,18 @@ footer .footer-contacts .footer-phone a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-copyright {
+    padding-top: 29px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-copyright {
+    padding-top: 10px;
+  }
 }
 
 .footer-copyright_text {
@@ -1551,12 +1576,16 @@ footer .footer-contacts .footer-phone a {
 
 @media screen and (min-width: 768px) {
   .about {
+    padding-top: 130px;
+    padding-bottom: 33px;
     background-position: right 0 bottom 65px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about {
+    padding-top: 125px;
+    padding-bottom: 73px;
     background-position: right 0 bottom -65px;
   }
 }
@@ -1575,7 +1604,6 @@ footer .footer-contacts .footer-phone a {
 @media screen and (min-width: 768px) {
   .about__label {
     display: block;
-    padding-top: 130px;
     font-size: 26px;
     line-height: 1.15;
   }
@@ -1583,7 +1611,6 @@ footer .footer-contacts .footer-phone a {
 
 @media screen and (min-width: 1280px) {
   .about__label {
-    padding-top: 125px;
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
@@ -1810,6 +1837,19 @@ footer .footer-contacts .footer-phone a {
   background-color: var(--bg-alternate-color);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 33px;
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advantages {
+    padding-top: 73px;
+  }
+}
+
 .advantages-img {
   margin-bottom: 16px;
 }
@@ -1890,22 +1930,23 @@ footer .footer-contacts .footer-phone a {
 }
 
 .contacts {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #fff5f6), color-stop(5%, #fff));
-  background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
   padding-top: 43px;
   padding-bottom: calc(113px - 25px);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #fff5f6), color-stop(5%, #fff));
+  background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
+    padding-top: 60px;
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(88%, #fff5f6), color-stop(12%, #fff));
     background-image: linear-gradient(to top, #fff5f6 88%, #fff 12%);
-    padding-bottom: 113px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts {
+    padding-top: 88px;
     background-image: url(../images/sectionbg2.png), -webkit-gradient(linear, left bottom, left top, color-stop(88%, #fff5f6), color-stop(12%, #fff));
     background-image: url(../images/sectionbg2.png), linear-gradient(to top, #fff5f6 88%, #fff 12%);
     background-repeat: no-repeat;
@@ -2176,6 +2217,13 @@ a {
   padding-bottom: 43px;
 }
 
+@media screen and (min-width: 768px) {
+  .customer-review {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .customer-img {
   width: 85px;
   margin: 0 auto;
@@ -2364,6 +2412,8 @@ a {
 
 @media screen and (min-width: 768px) {
   .gallery {
+    padding-top: 70px;
+    padding-bottom: 60px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(41%, #fff5f6), color-stop(43%, #fff));
     background-image: linear-gradient(to bottom, #fff5f6 41%, #fff 43%);
   }
