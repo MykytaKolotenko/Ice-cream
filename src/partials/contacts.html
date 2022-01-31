@@ -116,7 +116,7 @@
           <use href="images/icon_defs.svg#icon-arrow"></use>
         </svg>
       </button>
-      <button type="button" class="franchise-btn">
+      <button type="button" class="franchise-btn" data-open-franchise>
         Franchise
         <svg class="contacts__icon" width="12" height="12">
           <use href="images/icon_defs.svg#icon-arrow"></use>
@@ -125,10 +125,12 @@
     </div>
   </div>
 
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="button close-btn" data-modal-close>
-        <svg class="close-icon" width="16" height="16">
+  <!-- modal-map -->
+
+  <div class="backdrop backdrop-settings is-hidden" data-modal>
+    <div class="modal-maps modal-settings">
+      <button class="close-btn" data-modal-close>
+        <svg class="close-icon">
           <use href="images/svg/cross.svg#icon-cross"></use>
         </svg>
       </button>
@@ -167,6 +169,30 @@
       </ul>
     </div>
   </div>
+
+  <!-- modal-franchise -->
+
+  <div class="backdrop backdrop-settings" data-modal-franchise>
+    <div class="modal-franchis modal-settings">
+      <button class="close-btn" data-close-franchise>
+        <svg class="close-icon" width="16" height="16">
+          <use href="images/svg/cross.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <p class="modal-franchis__title">Contact Us</p>
+
+      <ul class="modal-franchis__list">
+        <li>
+          <a href="tel:+61(0) 383 766 284" class="contacts-link">tel: +61(0) 383 766 284</a>
+        </li>
+        <li>
+          <a href="mailto:noreply@envato.com" class="contacts-link">mail: noreply@envato.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 
 <script src="js/modal-map.js"></script>
+<script src="js/modal-franchise.js"></script>
