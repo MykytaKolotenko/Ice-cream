@@ -1533,6 +1533,8 @@ footer .footer-contacts .footer-phone a {
 }
 
 .about {
+  padding-top: 125px;
+  padding-bottom: 20px;
   background-color: var(--bg-alternate-color);
   max-width: 100%;
   background-image: url(/images/sectionbg.png);
@@ -1568,7 +1570,6 @@ footer .footer-contacts .footer-phone a {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 18px;
   line-height: 1.17;
-  padding-top: 125px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1804,7 +1805,8 @@ footer .footer-contacts .footer-phone a {
 }
 
 .advantages {
-  padding: 15px 0px;
+  padding-top: 20px;
+  padding-bottom: 49px;
   background-color: var(--bg-alternate-color);
 }
 
@@ -1890,7 +1892,8 @@ footer .footer-contacts .footer-phone a {
 .contacts {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(95%, #fff5f6), color-stop(5%, #fff));
   background-image: linear-gradient(to top, #fff5f6 95%, #fff 5%);
-  padding-bottom: 113px;
+  padding-top: 43px;
+  padding-bottom: calc(113px - 25px);
 }
 
 @media screen and (min-width: 768px) {
@@ -2168,6 +2171,11 @@ a {
   text-decoration: none;
 }
 
+.customer-review {
+  padding-top: 40px;
+  padding-bottom: 43px;
+}
+
 .customer-img {
   width: 85px;
   margin: 0 auto;
@@ -2227,7 +2235,7 @@ a {
   padding-right: 16px;
   position: relative;
   z-index: 1;
-  background-image: repeating-linear-gradient(transparent, transparent 28px, #E1E1E1 28px, #E1E1E1 29px, transparent 29px, transparent 59px, #E1E1E1 59px, #E1E1E1 60px);
+  background-image: repeating-linear-gradient(transparent, transparent 28px, #e1e1e1 28px, #e1e1e1 29px, transparent 29px, transparent 59px, #e1e1e1 59px, #e1e1e1 60px);
 }
 
 @media screen and (min-width: 768px) {
@@ -2323,7 +2331,7 @@ a {
   z-index: -1;
   top: -22px;
   left: -20px;
-  fill: #E1E1E1;
+  fill: #e1e1e1;
 }
 
 @media screen and (min-width: 768px) {
@@ -2341,7 +2349,8 @@ a {
 }
 
 .gallery {
-  padding: 30px 0px;
+  padding-top: 49px;
+  padding-bottom: 40px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(42%, #fff5f6), color-stop(44%, #fff));
   background-image: linear-gradient(to bottom, #fff5f6 42%, #fff 44%);
 }
