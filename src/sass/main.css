@@ -515,6 +515,31 @@ p {
   height: 100%;
 }
 
+.header-modal_lines {
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: var(--svg-main-color);
+}
+
+.header-modal_lines:not(:first-child) {
+  margin-top: 6px;
+}
+
+.header-burger {
+  border: none;
+  background-color: inherit;
+  z-index: 10;
+}
+
+.header-burger:hover .header-modal_lines {
+  background-color: red;
+}
+
+.header-modal {
+  background-color: var(--b-bg-menu-c);
+}
+
 .hero {
   background-color: var(--hh-main-color);
 }
@@ -1448,11 +1473,11 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
-::-webkit-scrollbar {
-  width: 3px;
+.products-card__description::-webkit-scrollbar {
+  width: 2px;
 }
 
-::-webkit-scrollbar-thumb {
+.products-card__description::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 
