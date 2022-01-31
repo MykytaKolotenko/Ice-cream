@@ -1929,6 +1929,12 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-glass::before {
+    background-image: url(/images/glass@2x.png);
+  }
+}
+
 .advantages-apple::before {
   content: ' ';
   width: 50px;
@@ -1950,6 +1956,12 @@ footer .footer-contacts .footer-phone a {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-apple::before {
+    background-image: url(/images/apple@2x.png);
+  }
+}
+
 .advantages-heart::before {
   content: ' ';
   width: 44px;
@@ -1968,6 +1980,12 @@ footer .footer-contacts .footer-phone a {
 @media screen and (min-width: 1280px) {
   .advantages-heart::before {
     margin-bottom: 40px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-heart::before {
+    background-image: url(/images/heart@2x.png);
   }
 }
 
@@ -2466,30 +2484,7 @@ a {
 .gallery {
   padding-top: 49px;
   padding-bottom: 40px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #fff5f6), color-stop(47%, #fff));
-  background-image: linear-gradient(to bottom, #fff5f6 45%, #fff 47%);
-}
-
-@media screen and (min-width: 480px) {
-  .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(46%, #fff5f6), color-stop(48%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 46%, #fff 48%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .gallery {
-    padding-top: 70px;
-    padding-bottom: 60px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(44%, #fff5f6), color-stop(46%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 44%, #fff 46%);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .gallery {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(43%, #fff5f6), color-stop(44%, #fff));
-    background-image: linear-gradient(to bottom, #fff5f6 43%, #fff 44%);
-  }
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff5f6), color-stop(50%, #fff));
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #fff 50%);
 }
 /*# sourceMappingURL=main.css.map */

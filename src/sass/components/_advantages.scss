@@ -72,6 +72,9 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 40px;
     }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/glass@2x.png);
+    }
   }
 }
 
@@ -90,6 +93,9 @@
     @media screen and (min-width: 1280px) {
       margin-bottom: 40px;
     }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/apple@2x.png);
+    }
   }
 }
 
@@ -107,6 +113,9 @@
     }
     @media screen and (min-width: 1280px) {
       margin-bottom: 40px;
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/heart@2x.png);
     }
   }
 }
