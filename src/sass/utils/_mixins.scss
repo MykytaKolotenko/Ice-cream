@@ -61,6 +61,8 @@
   border: none;
 
   cursor: pointer;
+
+  transition: color var(--transition-time-cubic), background-color var(--transition-time-cubic);
 }
 
 @mixin hidden {
