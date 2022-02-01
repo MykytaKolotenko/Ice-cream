@@ -12,10 +12,6 @@
   }
 }
 
-.advantages-img {
-  margin-bottom: 16px;
-}
-
 .advantages-list {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -65,6 +61,7 @@
     display: block;
     background-image: url(/images/glass.png);
     margin-bottom: 16px;
+    background-size: cover;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 36px;
@@ -86,6 +83,7 @@
     display: block;
     background-image: url(/images/apple.png);
     margin-bottom: 16px;
+    background-size: cover;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 36px;
@@ -107,6 +105,7 @@
     display: block;
     background-image: url(/images/heart.png);
     margin-bottom: 16px;
+    background-size: cover;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 36px;
