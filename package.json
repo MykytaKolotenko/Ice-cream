@@ -27,5 +27,8 @@
   },
   "optionalDependencies": {
     "fsevents": "^2.3.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
