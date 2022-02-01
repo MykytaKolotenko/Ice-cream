@@ -1,65 +1,80 @@
-
 <header class="header">
-    <div class="header__container">
-        <!-- =====Logo===== -->
+  <div class="header__container container">
+    <!-- =====Logo===== -->
 
-        <a class="header__link" href="#" lang="en">
-            <picture>
-                <source srcset="images/logo.png 1x,
-                images/logo@2x.png 2x
-                ">
-                <img src="images/logo.png" width="199px" alt="Логотип вкусное мороженое">
-            </picture>
-        </a>
+    <a class="header__link" href="#" lang="en">
+      <picture>
+        <source srcset="images/logo.png 1x, images/logo@2x.png 2x" />
+        <img src="images/logo.png" width="199px" alt="Логотип вкусное мороженое" />
+      </picture>
+    </a>
 
-        <nav class="header__nav">
-            
-                <div class="header__wraper" id="header__wraper" data-menu>
-                    <div class="header__wrape">                   
-                
-                        <button class="buy-now buy-now--menu" type="button">
-                            Buy now
-                            <svg class="buy-now__icon">
-                                <use href="images/svg/vector.svg#icon-check-mark"></use>
-                            </svg>
-                        </button>
-                
-                        <ul class="sait-nav">
-                            <li class="sait-nav__item"><a class="sait-nav__link sait-nav__link--current">Home</a></li>
-                            <li class="sait-nav__item"><a class="sait-nav__link">About us</a></li>
-                            <li class="sait-nav__item"><a class="sait-nav__link">How it&#39;s made?</a></li>
-                            <li class="sait-nav__item"><a class="sait-nav__link">Our products</a></li>
-                            <li class="sait-nav__item"><a class="sait-nav__link">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            
-            
+    <nav class="header__nav">
+          <ul class="sait-nav">
+            <li class="sait-nav__item">
+              <a class="sait-nav__link sait-nav__link--current">Home</a>
+            </li>
+            <li class="sait-nav__item"><a class="sait-nav__link" href="#about">About us</a></li>
+            <li class="sait-nav__item">
+              <a class="sait-nav__link" href="#made">How it&#39;s made?</a>
+            </li>
+            <li class="sait-nav__item">
+              <a class="sait-nav__link" href="#products">Our products</a>
+            </li>
+            <li class="sait-nav__item"><a class="sait-nav__link" href="#contacts">Contact</a></li>
+          </ul>       
+    </nav>
 
-            <button class="buttonn-nav" type="button" aria-expanded="false" aria-controls="header-wraper"
-                data-menu-button>
-                <div class="buttonn-nav__wraper">
-                    <div class="buttonn-nav__underline"></div>
-                    <div class="buttonn-nav__underline"></div>
-                    <div class="buttonn-nav__underline"></div>
-                </div>
+      
 
-               
-                    <svg class="buttonn-nav__icon-close" aria-label="Переключатель мобильного меню">
-                        <use href="images/svg/icon-close.svg#icon-close"></use>
-                    </svg>
-               
+  
+      <button type="button" class="header-burger" header-modal-open>
+          <span class="header-modal_lines"></span>
+          <span class="header-modal_lines"></span>
+          <span class="header-modal_lines"></span>
+      </button>
+
+        <div class="backdrop is-hidden header-modal" header-modal>
+          <div class="header-modal__wrapper">
+            <button class="backdrop__btn-close" type="button" header-modal-close>
+              <svg class="header-modal_exit">
+                <use href="images/svg/icon-close.svg#icon-close"></use>
+              </svg>
             </button>
-
-            <button class="buy-now" type="button" data-modal-open>
-                Buy now
-                <svg class="buy-now__icon">
-                    <use href="images/svg/vector.svg#icon-check-mark"></use>
-                </svg>
+            
+            <button class="backdrop_btn-by" type="button">
+              Buy now
+              <svg class="buy-now__icon">
+                <use href="images/svg/vector.svg#icon-check-mark"></use>
+              </svg>
             </button>
-        </nav>
-
-    </div>
-
+            
+            <ul class="header-modal_nav">
+              <li class="header-modal_nav__item">
+                <a class="header-modal_nav__link header-modal_nav__link--current">Home</a>
+              </li>
+              <li class="header-modal_nav__item">
+                <a class="header-modal_nav__link" href="#about" header-modal-close1>About us</a>
+              </li>
+              <li class="header-modal_nav__item">
+                <a class="header-modal_nav__link" href="#made" header-modal-close2>How it&#39;s made?</a>
+              </li>
+              <li class="header-modal_nav__item">
+                <a class="header-modal_nav__link" href="#products" header-modal-close3>Our products</a>
+              </li>
+              <li class="header-modal_nav__item">
+                <a class="header-modal_nav__link" href="#contacts" header-modal-close4>Contact</a>
+              </li>
+            </ul>
+          </div>
+         
+          </div>
+    
+    <button class="buy-now" type="button"> 
+      Buy now
+      <svg class="buy-now__icon">
+        <use href="images/svg/vector.svg#icon-check-mark"></use>
+      </svg>
+    </button>
+  </div>
 </header>
-

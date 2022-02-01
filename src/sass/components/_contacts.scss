@@ -85,6 +85,10 @@
     font-size: inherit;
     font-weight: 500;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.86;
+    }
   }
 
   &__description {
@@ -92,6 +96,18 @@
 
     line-height: 1.5;
     color: var(--text-description-c);
+
+    @media screen and (min-width: 320px) {
+      line-height: 1.5;
+    }
+
+    @media screen and (min-width: 768px) {
+      line-height: 1.66;
+    }
+
+    @media screen and (min-width: 1280px) {
+      line-height: 1.83;
+    }
   }
 
   &__buttons {
@@ -105,6 +121,7 @@
 }
 
 .container-contacts {
+  position: relative;
   padding-left: 50px;
   padding-right: 50px;
   font-size: 12px;
@@ -129,6 +146,20 @@
   &:not(:last-child) {
     border-bottom: 1px solid #e1e1e1;
     padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 320px) {
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.83;
+  }
+}
+
+.schedule__list {
+  @media screen and (min-width: 768px) {
+    line-height: 1.86;
   }
 }
 
@@ -169,7 +200,11 @@
 }
 
 .location-btn {
-  @include button(17px, 17px, #ffffff, #d41342);
+  &:hover {
+    background-color: var(--hh-hover-color);
+  }
+
+  @include button(17px, 17px, #ffffff, #d41443);
 
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
@@ -188,6 +223,10 @@
 }
 
 .franchise-btn {
+  &:hover {
+    background-color: var(--svg-hover-color);
+  }
+
   @include button(32px, 32px, #d41443, #ffffff);
 
   @media screen and (min-width: 768px) {
@@ -205,4 +244,167 @@
 .contacts__icon {
   fill: currentColor;
   margin-left: 8px;
+}
+
+s
+.backdrop-settings {
+  overflow: scroll;
+}
+
+.modal-settings {
+  width: 280px;
+  padding: 20px 25px;
+  border-radius: 24px;
+  color: #d41443;
+  background-color: var(--bg-alternate-color);
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    padding: 30px 35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 600px;
+    padding: 35px 40px;
+  }
+}
+
+.modal-maps {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+
+  @media screen and (min-width: 768px) {
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 750px;
+
+    top: 50px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+  }
+}
+
+.close-btn {
+
+  @include button(0px, 0px, #d41443, #fff5f6);
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -12px;
+  right: -12px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  @media screen and (min-width: 1280px) {
+    top: -18px;
+    right: -18px;
+    width: 35px;
+    height: 35px;
+  }
+
+  &:hover {
+    background-color: var(--hh-alternate-color);
+    border: none;
+    color: #fff;
+  }
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+
+  @media screen and (min-width: 1280px) {
+    width: 18px;
+    height: 18px;
+
+  }
+}
+
+.map {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+
+
+  @media screen and (min-width: 768px) {
+    height: 175px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 185px;
+  }
+
+}
+
+.modal__title {
+  margin: 0;
+  padding-bottom: 5px;
+
+  font-size: 12px;
+  font-weight: bold;
+  text-align: start;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.modal-franchis {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+  }
+
+  &__list {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 25px;
+    }
+  }
+
 }
