@@ -246,7 +246,6 @@
   margin-left: 8px;
 }
 
-s
 .backdrop-settings {
   overflow: scroll;
 }
@@ -293,12 +292,10 @@ s
     &:not(:last-child) {
       margin-bottom: 15px;
     }
-
   }
 }
 
 .close-btn {
-
   @include button(0px, 0px, #d41443, #fff5f6);
 
   position: absolute;
@@ -336,7 +333,6 @@ s
   @media screen and (min-width: 1280px) {
     width: 18px;
     height: 18px;
-
   }
 }
 
@@ -345,7 +341,6 @@ s
   height: 130px;
   border-radius: 10px;
 
-
   @media screen and (min-width: 768px) {
     height: 175px;
   }
@@ -353,7 +348,6 @@ s
   @media screen and (min-width: 1280px) {
     height: 185px;
   }
-
 }
 
 .modal__title {
@@ -363,7 +357,6 @@ s
   font-size: 12px;
   font-weight: bold;
   text-align: start;
-
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -406,5 +399,4 @@ s
       font-size: 25px;
     }
   }
-
 }
