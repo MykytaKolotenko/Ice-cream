@@ -43,7 +43,7 @@
       height: 336px;
       top: -36px;
       right: 223px;
-      z-index: 1;      
+      z-index: 1;
       background-size: cover;
       background-image: url(../images/ice-cream.png);
       @media screen and (min-device-pixel-ratio: 2),
@@ -71,15 +71,16 @@
 
   &::after {
     content: '';
-    position: absolute; 
-    background-repeat: no-repeat;   
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (max-width: 767px) {
-     width: 264px;
-height: 344px;
+      width: 264px;
+      height: 344px;
       top: -110px;
       right: 10px;
-       
+
       background-image: url(../images/ellipse-mob.png);
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -90,30 +91,30 @@ height: 344px;
 
     @media screen and (min-width: 768px) {
       width: 324px;
-height: 322px;
+      height: 322px;
       top: -60px;
-      right: 103px;      
+      right: 103px;
       background-size: contain;
-       background-image: url(../images/ellipse-tab.png);
+      background-image: url(../images/ellipse-tab.png);
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-       background-image: url(../images/ellipse-tab@2x.png);
+        background-image: url(../images/ellipse-tab@2x.png);
       }
     }
 
     @media screen and (min-width: 1280px) {
-     width: 538px;
-height: 538px;
+      width: 538px;
+      height: 538px;
       top: -120px;
       right: 167px;
-      
+
       z-index: 1;
       background-image: url(../images/ellipse-desc.png);
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-       background-image: url(../images/ellipse-desc@2x.png);
+        background-image: url(../images/ellipse-desc@2x.png);
       }
     }
   }
@@ -228,7 +229,6 @@ height: 538px;
     line-height: 1.29;
   }
 }
-
 
 .hero__how-made {
   width: 82px;
