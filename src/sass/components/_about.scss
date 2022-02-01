@@ -12,6 +12,7 @@ br {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0 bottom 66px;
+  padding-bottom: 20px;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -20,10 +21,13 @@ br {
   @media screen and (min-width: 768px) {
     padding-top: 130px;
     background-position: right 0 bottom -20px;
+    padding-bottom: 33px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
     background-position: right 0 bottom -65px;
+
+    padding-bottom: 20px;
   }
   &__label {
     font-family: var(--additional-ff);
