@@ -187,7 +187,6 @@
   position: relative;
   display: flex;
 
-
   @media screen and (min-width: 768px) {
     margin-bottom: 66px;
   }
@@ -201,10 +200,10 @@
   width: 62px;
   height: 24px;
   background: var(--b-burger-c);
-  
+
   border-radius: 20px;
   margin-right: 8px;
-  
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
@@ -235,12 +234,15 @@
 }
 
 .hero__link-products {
-  display: flex; 
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .hero__how-made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 82px;
   height: 24px;
   background: var(--main-color);
