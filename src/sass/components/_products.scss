@@ -126,6 +126,8 @@
   letter-spacing: 0.04em;
   color: var(--text-alternate-c);
   overflow-y: scroll;
+  scrollbar-color: #fff #ffffff4d;
+  scrollbar-width: thin;
 
   @media screen and (min-width: 768px) {
     line-height: 1.76;
@@ -144,6 +146,7 @@
 .products-card__description::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
+
 .products-card__btn {
   width: 40px;
   height: 40px;
