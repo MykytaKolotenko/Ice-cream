@@ -45,15 +45,27 @@ a {
 }
 
 .review-article-container {
-  padding: 23px 50px 20px 50px;
+  max-width: 280px;
+
+  padding: 43px 66px 26px 57px;
+
   margin-bottom: 14px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: #fafafa;
   @media screen and(min-width: 768px) {
-    padding: 10px 36px 28px 60px;
+    padding: 47px 80px 34px 80px;
+
     margin-bottom: 8px;
+    width: 620px;
+    max-width: unset;
   }
   @media screen and(min-width: 1280px) {
-    padding: 30px 190px 32px 200px;
+    // padding: 30px 190px 32px 200px;
+    padding: 47px 89px 39px 87px;
     margin-bottom: -1px;
+    width: 926px;
   }
 }
 
