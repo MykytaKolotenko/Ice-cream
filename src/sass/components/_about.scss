@@ -8,11 +8,11 @@ br {
   background-color: var(--bg-alternate-color);
   max-width: 100%;
   padding-top: 125px;
+  padding-bottom: 20px;
   background-image: url(/images/sectionbg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0 bottom 66px;
-  padding-bottom: 20px;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
@@ -20,14 +20,13 @@ br {
   }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
-    background-position: right 0 bottom -20px;
     padding-bottom: 33px;
+    background-position: right 0 bottom -20px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    background-position: right 0 bottom -65px;
-
     padding-bottom: 20px;
+    background-position: right 0 bottom -45px;
   }
   &__label {
     font-family: var(--additional-ff);
@@ -100,9 +99,9 @@ br {
     padding: 0 40px;
     margin-top: 50px;
     @media screen and (min-width: 768px) {
+      padding: 0;
       margin-top: 100px;
       margin-left: 17px;
-      padding: 0;
     }
     @media screen and (min-width: 1280px) {
       margin-top: 106px;
@@ -115,7 +114,7 @@ br {
     color: var(--text-description-c);
     font-size: 12px;
     line-height: 1.6;
-    &:first-child {
+    &:nth-child(2) {
       color: var(--text-main-c);
       @media screen and (min-width: 768px) {
         margin-bottom: 0;
@@ -124,7 +123,7 @@ br {
         letter-spacing: 0.04em;
       }
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       margin-top: 32px;
       @media screen and (min-width: 768px) {
         letter-spacing: 0.04em;
@@ -135,7 +134,7 @@ br {
         margin-top: 35px;
       }
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       margin-top: 32px;
       @media screen and (min-width: 768px) {
         letter-spacing: 0.04em;
@@ -151,7 +150,7 @@ br {
       line-height: 1.8;
     }
     @media screen and (min-width: 1280px) {
-      &:first-child {
+      &:nth-child(2) {
         font-size: 16px;
         line-height: 1.75;
       }
